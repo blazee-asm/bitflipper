@@ -1,2 +1,2 @@
 # bitflipper
-plain.txt is what you want to bitflip, cipher.txt is the key (remember it!!), and output.txt is the bitflipped unreadable mess.
+A useful encrypter that makes your files an unreadable mess. Encrypt a second time to decrypt!!!

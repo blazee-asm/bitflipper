@@ -6,9 +6,16 @@ char xor_encrypt(char c, char key) {
 
 int main() {
     // i like opening files
-    FILE *input = fopen("plain.txt", "rb");
-    FILE *key = fopen("cipher.txt", "rb");
-    FILE *output = fopen("output.txt", "wb");
+    char f[100];
+    printf("Input file: ");
+    scanf("%99s", f);
+    FILE *input = fopen(f, "rb");
+    printf("Key file: ");
+    scanf("%99s", f);
+    FILE *key = fopen(f, "rb");
+    printf("Output file: ");
+    scanf("%99s", f);
+    FILE *output = fopen(f, "wb");
     // oh no, file problems
     if (input == NULL || key == NULL || output == NULL) {
         printf("Error when opening files.");
